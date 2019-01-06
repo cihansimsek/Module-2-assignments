@@ -1,0 +1,102 @@
+body {
+	font-family: "Times New Roman",Times, serif;
+	margin:1.25%;
+	padding-left: 1.25%;
+	}
+
+/*Div Types */
+div{
+	float: left;
+	box-sizing: border-box;	
+	border:solid;
+	border-color: black bold;
+	border-width: 1px;
+	margin-left: 1.25%;
+	margin-right:1.25%;
+	margin-bottom: 1.25%;
+	margin-top: 1.25%;}
+
+div.boxtype1{
+	background-color: blue;
+			 
+}
+div.boxtype2{
+	background-color: red;
+}
+
+div.boxtype3{
+	background-color: yellow;
+}
+
+/*Header Types*/
+h1{ 
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 306.25%;
+	font-style: italic;
+	color: bold;
+	}
+
+h2{ position: relative;
+	float: right;
+	box-sizing: border-box;
+	text-align: center;
+	border-bottom: solid;
+	border-left: solid;
+	border-width: 1px;
+	border-color: black;
+	font-size: 175%;	
+	margin-left: 0px;
+	margin-top: 0px;
+	padding: 10px;
+
+	}
+
+h2.headertype1{
+	background-color: green;
+	color: white;
+	font-weight: bold;
+}
+
+h2.headertype2{
+	background-color: blue;
+	color: white;
+	font-weight: bold;
+}
+
+h2.headertype3{
+	background-color: grey;
+	color: white;
+	font-weight: bold;
+}
+
+/*Paragraph styles*/
+p{	position: relative;
+	float: left;
+	color: black;
+	font-size: 100%
+}
+
+/*Desktop Version*/ 
+@media (min-width: 992px){
+	div{ 	
+		 width: 30%;
+		}
+	}
+
+/*Tablet Version*/
+@media (min-width: 768px) and (max-width: 991px){
+	div{ 		
+		 width: 41.5%;
+		 }
+	div.boxtype3{
+		width: 85.5%
+	}
+}
+
+/*Mobile Version*/
+@media(max-width: 767px){
+	div{ 
+		 width: 95%;
+		 		}
+}
